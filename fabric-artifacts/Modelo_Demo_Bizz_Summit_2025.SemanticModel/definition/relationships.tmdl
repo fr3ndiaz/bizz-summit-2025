@@ -1,0 +1,32 @@
+relationship 7802dc03-14e9-4b3c-9e8d-fe0d0799ecf9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: T_Factura.FechaPago
+	toColumn: LocalDateTable_aa8df232-aadf-45fb-a525-3e98c224c0ec.Date
+
+relationship 1ae41225-35da-4b59-b699-a7e3004d03ed
+	joinOnDateBehavior: datePartOnly
+	fromColumn: T_Factura.FechaEntrega
+	toColumn: LocalDateTable_998c7beb-5433-4870-8d22-3af1ea618787.Date
+
+relationship 68b72a78-8dc0-44c9-9395-1e966dbef28f
+	fromColumn: T_Factura.IdTerritorio
+	toColumn: T_Territorio.IdTerritorio
+
+relationship e25c4914-22c0-463b-87c1-fab65019ff52
+	joinOnDateBehavior: datePartOnly
+	fromColumn: T_Factura.Fecha_Creación
+	toColumn: LocalDateTable_f2418aa6-6c4a-4ba6-b064-cd0757d98b8c.Date
+
+relationship 2656392f-4f5d-760e-0217-d8c7fd94c448
+	fromColumn: T_Factura.ID_Cliente
+	toColumn: T_Clientes.ID_Cliente
+
+relationship afaf961f-e2b6-4452-b6a4-2ff61b600064
+	joinOnDateBehavior: datePartOnly
+	fromColumn: T_Date.Date
+	toColumn: LocalDateTable_5f2ad9a2-9481-481e-a940-028ceaa20c68.Date
+
+relationship 12ebb267-2922-f2d9-011a-16c576d6f4d9
+	fromColumn: T_Detalle_Pedido.ID_Factura
+	toColumn: T_Factura.ID
+
