@@ -51,8 +51,8 @@ jobs:
       - name: Run Artifact update
         run: python ./scripts/run_fabric_cicd.py
         env:
-          FABRIC_CLIENT_ID: ${{ env.FABRIC_CLIENT_ID }}
-          FABRIC_CLIENT_SECRET: ${{ env.FABRIC_CLIENT_SECRET }}
-          FABRIC_TENANT_ID: ${{ env.FABRIC_TENANT_ID }}
-          FABRIC_WORKSPACE_ID: ${{ env.FABRIC_WORKSPACE_ID }}
-          TARGET_ENVIRONMENT_NAME: ${{ env.ENVIRONMENT }}          
+          FABRIC_CLIENT_ID: ${{ secrets.FABRIC_CLIENT_ID }}
+          FABRIC_CLIENT_SECRET: ${{ secrets.FABRIC_CLIENT_SECRET }}
+          FABRIC_TENANT_ID: ${{ secrets.FABRIC_TENANT_ID }}
+          FABRIC_WORKSPACE_ID: ${{ secrets.FABRIC_WORKSPACE_ID }}
+          TARGET_ENVIRONMENT_NAME: ${{ env.ENVIRONMENT }}
