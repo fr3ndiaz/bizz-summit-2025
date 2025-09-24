@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Modelo_Demo_Bizz_Summit_2025"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "00580f51-0a8f-a769-4897-92cec085547c"
+  }
+}

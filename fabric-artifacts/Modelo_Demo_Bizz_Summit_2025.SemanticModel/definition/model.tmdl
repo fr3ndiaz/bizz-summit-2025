@@ -1,0 +1,29 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-ES
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.146.1254.0 (25.08)+791a7518fadc83da883d79322a2658aff57c8db3
+
+annotation PBI_QueryOrder = ["T_Clientes","T_Detalle_Pedido","T_Factura","T_Territorio"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DateTableTemplate_c1a30936-9b78-4345-8d09-c4c2f1ca0bc5
+ref table T_Date
+ref table T_Clientes
+ref table T_Detalle_Pedido
+ref table T_Territorio
+ref table T_Factura
+ref table LocalDateTable_aa8df232-aadf-45fb-a525-3e98c224c0ec
+ref table LocalDateTable_998c7beb-5433-4870-8d22-3af1ea618787
+ref table LocalDateTable_f2418aa6-6c4a-4ba6-b064-cd0757d98b8c
+ref table LocalDateTable_5f2ad9a2-9481-481e-a940-028ceaa20c68
+
+ref cultureInfo en-US
+

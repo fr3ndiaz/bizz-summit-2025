@@ -1,0 +1,398 @@
+{
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY18SU07\",\"type\":2,\"version\":{\"visual\":\"1.8.23\",\"report\":\"2.0.23\",\"page\":\"1.3.23\"}},\"customTheme\":{\"name\":\"Classroom\",\"type\":2,\"version\":{\"visual\":\"1.8.47\",\"report\":\"2.0.47\",\"page\":\"1.3.47\"}}},\"activeSectionIndex\":0,\"bookmarks\":[{\"displayName\":\"V_VerTabla\",\"name\":\"Bookmarkef15f30cefa914b898c9\",\"explorationState\":{\"version\":\"1.3\",\"activeSection\":\"ReportSection93c7a20358b303d90181\",\"sections\":{\"ReportSection93c7a20358b303d90181\":{\"visualContainers\":{\"d302cd52e41cd0b08dc7\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Pais\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"howCreated\":0},{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Categoría\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"map\",\"objects\":{},\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Pais\"}}]},\"display\":{\"mode\":\"hidden\"}}},\"b6f5a9e00e162aa0cc49\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Grupo\"}},\"howCreated\":0},{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Pais\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"slicer\",\"objects\":{\"merge\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}},\"activeProjections\":{\"Values\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Grupo\"}}]}}},\"757678441b4d694d27fc\":{\"singleVisual\":{\"visualType\":\"actionButton\",\"objects\":{}}},\"18b40ff625772eb4c8d3\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Pais\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"howCreated\":0},{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Categoría\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"pivotTable\",\"objects\":{},\"activeProjections\":{\"Rows\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Pais\"}}],\"Columns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Categoría\"}}]}}},\"602618438321830bc5ea\":{\"singleVisual\":{\"visualType\":\"actionButton\",\"objects\":{}}},\"7e0715283d66b107bdb8\":{\"singleVisual\":{\"visualType\":\"actionButton\",\"objects\":{},\"display\":{\"mode\":\"hidden\"}}}}}},\"objects\":{\"merge\":{\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}},\"options\":{\"targetVisualNames\":[\"7e0715283d66b107bdb8\",\"602618438321830bc5ea\",\"18b40ff625772eb4c8d3\",\"d302cd52e41cd0b08dc7\"],\"suppressData\":true,\"suppressActiveSection\":true,\"applyOnlyToTargetVisuals\":true}},{\"displayName\":\"V_VerMapa\",\"name\":\"Bookmarkbd8e9dca2fe5844a4466\",\"explorationState\":{\"version\":\"1.3\",\"activeSection\":\"ReportSection93c7a20358b303d90181\",\"sections\":{\"ReportSection93c7a20358b303d90181\":{\"visualContainers\":{\"d302cd52e41cd0b08dc7\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Pais\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"howCreated\":0},{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Categoría\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"map\",\"objects\":{},\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Pais\"}}]}}},\"b6f5a9e00e162aa0cc49\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Grupo\"}},\"howCreated\":0},{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Pais\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"slicer\",\"objects\":{\"merge\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}},\"activeProjections\":{\"Values\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Grupo\"}}]}}},\"757678441b4d694d27fc\":{\"singleVisual\":{\"visualType\":\"actionButton\",\"objects\":{}}},\"18b40ff625772eb4c8d3\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Pais\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"howCreated\":0},{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Categoría\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"pivotTable\",\"objects\":{},\"activeProjections\":{\"Rows\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Territorio\"}},\"Property\":\"Pais\"}}],\"Columns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Categoría\"}}]},\"display\":{\"mode\":\"hidden\"}}},\"602618438321830bc5ea\":{\"singleVisual\":{\"visualType\":\"actionButton\",\"objects\":{},\"display\":{\"mode\":\"hidden\"}}},\"7e0715283d66b107bdb8\":{\"singleVisual\":{\"visualType\":\"actionButton\",\"objects\":{}}}}}},\"objects\":{\"merge\":{\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}},\"options\":{\"targetVisualNames\":[\"7e0715283d66b107bdb8\",\"602618438321830bc5ea\",\"18b40ff625772eb4c8d3\",\"d302cd52e41cd0b08dc7\"],\"suppressData\":true,\"suppressActiveSection\":true,\"applyOnlyToTargetVisuals\":true}}],\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection86108047eebd01dbf244",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod",
+      "parameters": "[{\"name\":\"Param_Filter83f4af61bb94c721e285\",\"boundFilter\":\"Filter83f4af61bb94c721e285\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Factura\"}},\"Property\":\"ID\"}}}]",
+      "type": 1
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY18SU07",
+            "path": "BaseThemes/CY18SU07.json",
+            "type": 202
+          },
+          {
+            "name": "Classroom",
+            "path": "BuiltInThemes/Classroom.json",
+            "type": 201
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "simpleImageEBC4593F96F1425FB3D84C5BF02B5075.pbiviz.json",
+            "path": "simpleImageEBC4593F96F1425FB3D84C5BF02B5075.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "simpleImageEBC4593F96F1425FB3D84C5BF02B5075",
+        "type": 0
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"dc5401e55d73912a4cb1\",\"target\":\"1d3a3ee67e5b8ecc1e03\",\"type\":1}],\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"404L\"}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0ae26cd4b74e0c0e43ca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":745.3892215568862,\"y\":0,\"z\":6000,\"width\":425.38922155688624,\"height\":118.80239520958084,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Detalle_Pedido.1- Monto Total (Año)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"1- Monto Total (Año)\"},\"Name\":\"T_Detalle_Pedido.1- Monto Total (Año)\",\"NativeReferenceName\":\"1- Monto Total (Año)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"1- Monto Total (Año)\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 118.80,
+          "width": 425.39,
+          "x": 745.39,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"13ae89dac4943d26934b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":55.47738693467336,\"y\":658.4924623115578,\"z\":13000,\"width\":135.0753768844221,\"height\":47.03517587939698,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Ir a Pag  Tabla Factura'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection93c7a20358b303d90181'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 47.04,
+          "width": 135.08,
+          "x": 55.48,
+          "y": 658.49,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"195b090de0e26dcbd03d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":744.9422632794458,\"y\":450.80831408775987,\"z\":3000,\"width\":512.8868360277137,\"height\":269.00692840646656,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"T_Detalle_Pedido.Categoría\",\"active\":true},{\"queryRef\":\"T_Detalle_Pedido.Sub_Categoria\"}],\"Columns\":[{\"queryRef\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Month\"}],\"Values\":[{\"queryRef\":\"Sum(T_Detalle_Pedido.Monto Total)\"},{\"queryRef\":\"Sum(T_Detalle_Pedido.ID_Detalle_Pedido)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t1\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"T_Factura\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Categoría\"},\"Name\":\"T_Detalle_Pedido.Categoría\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Monto Total\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.Monto Total)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Sub_Categoria\"},\"Name\":\"T_Detalle_Pedido.Sub_Categoria\",\"NativeReferenceName\":\"Sub_Categoria\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Name\":\"Variation\",\"Property\":\"Fecha_Creación\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Fecha_Creación Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Name\":\"Variation\",\"Property\":\"Fecha_Creación\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Fecha_Creación Month\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"ID_Detalle_Pedido\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.ID_Detalle_Pedido)\",\"NativeReferenceName\":\"# Articulos Comprados\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"T_Detalle_Pedido.Categoría\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Categoría\"}}],\"isPinned\":true},{\"queryRefs\":[\"T_Detalle_Pedido.Sub_Categoria\"],\"isCollapsed\":true}],\"root\":{\"identityValues\":null}}],\"columnProperties\":{\"Sum(T_Detalle_Pedido.ID Detalle Pedido)\":{\"displayName\":\"# Articulos Comprados\"},\"Sum(T_Detalle_Pedido.ID_Detalle_Pedido)\":{\"displayName\":\"# Articulos Comprados\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"rowHeaders\":[{\"properties\":{\"showExpandCollapseButtons\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 269.01,
+          "width": 512.89,
+          "x": 744.94,
+          "y": 450.81,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"1ab88420c7a921d5c4d9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":206.30849220103985,\"y\":0,\"z\":7000,\"width\":117.57365684575389,\"height\":720.9705372616984,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"basicShape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 720.97,
+          "width": 117.57,
+          "x": 206.31,
+          "y": 0.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"1d3a3ee67e5b8ecc1e03\",\"layouts\":[{\"id\":0,\"position\":{\"x\":801.4678899082569,\"y\":129.1743119266055,\"z\":9000,\"width\":455.045871559633,\"height\":289.17431192660547,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"T_Detalle_Pedido.Categoría\"},{\"queryRef\":\"T_Detalle_Pedido.Sub_Categoria\"},{\"queryRef\":\"T_Detalle_Pedido.Producto\"}],\"Y\":[{\"queryRef\":\"Sum(T_Detalle_Pedido.Monto Total)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t2\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"T_Factura\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Categoría\"},\"Name\":\"T_Detalle_Pedido.Categoría\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Producto\"},\"Name\":\"T_Detalle_Pedido.Producto\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Monto Total\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.Monto Total)\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Name\":\"Variation\",\"Property\":\"Fecha_Creación\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Fecha_Creación Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Name\":\"Variation\",\"Property\":\"Fecha_Creación\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Fecha_Creación Month\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Sub_Categoria\"},\"Name\":\"T_Detalle_Pedido.Sub_Categoria\",\"NativeReferenceName\":\"Sub_Categoria\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ff0a04'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_8f6851a0-7613-461c-ac45-84df314ddae7\"}},\"Property\":\"Month\"}},\"Right\":{\"Literal\":{\"Value\":\"'January'\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 289.17,
+          "width": 455.05,
+          "x": 801.47,
+          "y": 129.17,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"2f6642ca0eca3be90d15\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":118.89908256880733,\"z\":0,\"width\":245,\"height\":76.3302752293578,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Clientes.Nombre_Cliente\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Clientes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Nombre_Cliente\"},\"Name\":\"T_Clientes.Nombre_Cliente\",\"NativeReferenceName\":\"Nombre_Cliente\"}]},\"syncGroup\":{\"groupName\":\"Nombre Cliente\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.33,
+          "width": 245.00,
+          "x": 0.00,
+          "y": 118.90,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"47638bd5785926284e87\",\"layouts\":[{\"id\":0,\"position\":{\"x\":55.47738693467336,\"y\":545.1256281407035,\"z\":8000,\"width\":135.0753768844221,\"height\":47.03517587939698,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Ir a Pag 2'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection33b4664c236302530051'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 47.04,
+          "width": 135.08,
+          "x": 55.48,
+          "y": 545.13,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"66631e8a0004e7e399b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":280.17167381974247,\"z\":4000,\"width\":245,\"height\":101.63090128755364,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Day\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Factura\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Name\":\"Variation\",\"Property\":\"Fecha_Creación\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Fecha_Creación Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Name\":\"Variation\",\"Property\":\"Fecha_Creación\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Fecha_Creación Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Name\":\"Variation\",\"Property\":\"Fecha_Creación\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Fecha_Creación Day\"}]},\"syncGroup\":{\"groupName\":\"Year1\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 101.63,
+          "width": 245.00,
+          "x": 0.00,
+          "y": 280.17,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"abae774ad595bba700f7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":55.47738693467336,\"y\":601.8090452261306,\"z\":12000,\"width\":135.0753768844221,\"height\":47.03517587939698,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Ir a Pag 3'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection93c7a20358b303d90181'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 47.04,
+          "width": 135.08,
+          "x": 55.48,
+          "y": 601.81,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"c6d0164721cd1cd30096\",\"layouts\":[{\"id\":0,\"position\":{\"x\":288.22170900692845,\"y\":450.80831408775987,\"z\":2000,\"width\":421.2471131639723,\"height\":269.00692840646656,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Clientes.Nombre_Cliente\"},{\"queryRef\":\"Sum(T_Detalle_Pedido.Monto Total)\"},{\"queryRef\":\"CountNonNull(T_Factura.ID)1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t2\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0},{\"Name\":\"t3\",\"Entity\":\"T_Factura\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"T_Clientes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Monto Total\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.Monto Total)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t3\"}},\"Property\":\"ID\"}},\"Function\":5},\"Name\":\"CountNonNull(T_Factura.ID)1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Nombre_Cliente\"},\"Name\":\"T_Clientes.Nombre_Cliente\",\"NativeReferenceName\":\"Nombre_Cliente\"}]},\"columnProperties\":{\"CountNonNull(T_Factura.ID)1\":{\"displayName\":\"# Facturas\"}},\"drillFilterOtherVisuals\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 269.01,
+          "width": 421.25,
+          "x": 288.22,
+          "y": 450.81,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"ca989bf03351d0d099d4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":381.10552763819095,\"z\":11000,\"width\":244.82412060301505,\"height\":155.57788944723617,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Territorio.Pais\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Territorio\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Pais\"},\"Name\":\"T_Territorio.Pais\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Pais\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 155.58,
+          "width": 244.82,
+          "x": 0.00,
+          "y": 381.11,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"da141dbc34d7916c88d7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":195.22935779816513,\"z\":1000,\"width\":245,\"height\":101.28440366972477,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Factura.Fecha_Creación\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Factura\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Fecha_Creación\"},\"Name\":\"T_Factura.Fecha_Creación\",\"NativeReferenceName\":\"Fecha_Creación\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Fecha_Creación\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 101.28,
+          "width": 245.00,
+          "x": 0.00,
+          "y": 195.23,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"dad90d421e88646cd143\",\"layouts\":[{\"id\":0,\"position\":{\"x\":287.4251497005988,\"y\":0,\"z\":5000,\"width\":398.562874251497,\"height\":118.80239520958084,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(T_Detalle_Pedido.Monto Total)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Monto Total\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.Monto Total)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Monto Total\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 118.80,
+          "width": 398.56,
+          "x": 287.43,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"dc5401e55d73912a4cb1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":322.90909090909093,\"y\":129.45454545454547,\"z\":10000,\"width\":455.27272727272725,\"height\":289.45454545454544,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"T_Detalle_Pedido.Categoría\"},{\"queryRef\":\"T_Detalle_Pedido.Sub_Categoria\"},{\"queryRef\":\"T_Detalle_Pedido.Producto\"}],\"Y\":[{\"queryRef\":\"Sum(T_Detalle_Pedido.Monto Total)\"}],\"Tooltips\":[{\"queryRef\":\"Sum(T_Detalle_Pedido.Monto Total)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"T_Factura\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Monto Total\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.Monto Total)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Categoría\"},\"Name\":\"T_Detalle_Pedido.Categoría\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Producto\"},\"Name\":\"T_Detalle_Pedido.Producto\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Name\":\"Variation\",\"Property\":\"Fecha_Creación\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Fecha_Creación Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Name\":\"Variation\",\"Property\":\"Fecha_Creación\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Fecha_Creación Month\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Sub_Categoria\"},\"Name\":\"T_Detalle_Pedido.Sub_Categoria\",\"NativeReferenceName\":\"Sub_Categoria\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"35000000D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"100000000D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#00ff40'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"20000000D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"35000000D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#ffff3a'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Detalle_Pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"20000000D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#ff2b00'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}]}}}",
+          "filters": "[]",
+          "height": 289.45,
+          "width": 455.27,
+          "x": 322.91,
+          "y": 129.45,
+          "z": 10000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection33b4664c236302530051",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2d6d05d6deaa3415f9ae\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":3000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"63565aae0e3a6512bd00\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":98.34862385321101,\"z\":1000,\"width\":245.13761467889907,\"height\":101.28440366972477}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Factura.Fecha Creación.Variación.Date Hierarchy.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t1\",\"Entity\":\"T_Factura\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Fecha Creación\"},\"Name\":\"T_Factura.Fecha Creación.Variación.Date Hierarchy.Year\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Fecha Creación\"}}}]},\"syncGroup\":{\"groupName\":\"Year\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 101.28,
+          "width": 245.14,
+          "x": 0.00,
+          "y": 98.35,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"67fa7ad5e10a2da43e70\",\"layouts\":[{\"id\":0,\"position\":{\"x\":753.0275229357798,\"y\":98.34862385321101,\"z\":2000,\"width\":455.045871559633,\"height\":289.17431192660547}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"T_Factura.Fecha Creación.Variación.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"T_Clientes.Nombre Cliente\"},{\"queryRef\":\"T_Detalle_Pedido.Producto\"}],\"Y\":[{\"queryRef\":\"Sum(T_Detalle_Pedido.Monto Total)\"}],\"Tooltips\":[{\"queryRef\":\"CountNonNull(T_Factura.ID)1\"},{\"queryRef\":\"Sum(T_Detalle_Pedido.ID Detalle Pedido)\"}],\"Y2\":[{\"queryRef\":\"CountNonNull(T_Factura.ID)1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t1\",\"Entity\":\"T_Factura\",\"Type\":0},{\"Name\":\"t2\",\"Entity\":\"T_Clientes\",\"Type\":0},{\"Name\":\"t3\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Fecha Creación\"},\"Name\":\"T_Factura.Fecha Creación.Variación.Date Hierarchy.Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Nombre Cliente\"},\"Name\":\"T_Clientes.Nombre Cliente\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t3\"}},\"Property\":\"Producto\"},\"Name\":\"T_Detalle_Pedido.Producto\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t3\"}},\"Property\":\"Monto Total\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.Monto Total)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"ID\"}},\"Function\":5},\"Name\":\"CountNonNull(T_Factura.ID)1\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t3\"}},\"Property\":\"ID Detalle Pedido\"}},\"Function\":5},\"Name\":\"Sum(T_Detalle_Pedido.ID Detalle Pedido)\"}]},\"columnProperties\":{\"CountNonNull(T_Factura.ID)1\":{\"displayName\":\"# Facturas\"},\"Sum(T_Detalle_Pedido.ID Detalle Pedido)\":{\"displayName\":\"# Articulos Vendidos\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Detalle pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"35000000D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Detalle pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"100000000D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#00ff40'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Detalle pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"20000000D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Detalle pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"35000000D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#ffff3a'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Detalle pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Detalle pedido\"}},\"Property\":\"Monto Total\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"20000000D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#ff2b00'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}]}}}",
+          "filters": "[]",
+          "height": 289.17,
+          "width": 455.05,
+          "x": 753.03,
+          "y": 98.35,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"a31d537388d9bd38d198\",\"layouts\":[{\"id\":0,\"position\":{\"x\":270.091743119266,\"y\":98.34862385321101,\"z\":0,\"width\":413.9449541284404,\"height\":280.3669724770642}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"T_Clientes.Nombre Cliente\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(T_Detalle_Pedido.Monto Total)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Clientes\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Nombre Cliente\"},\"Name\":\"T_Clientes.Nombre Cliente\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Monto Total\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.Monto Total)\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 10 Clientes'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Clientes\"}},\"Property\":\"Nombre Cliente\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Clientes\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Nombre Cliente\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Monto Total\"}},\"Function\":0}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T_Clientes\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Nombre Cliente\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 280.37,
+          "width": 413.94,
+          "x": 270.09,
+          "y": 98.35,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Tabla Detalle Factura",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter83f4af61bb94c721e285\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Factura\"}},\"Property\":\"ID\"}},\"type\":\"Categorical\",\"howCreated\":5,\"isLockedInViewMode\":true}]",
+      "height": 720.00,
+      "name": "ReportSection86108047eebd01dbf244",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"11fcbdee69d7a03fd319\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":280.17167381974247,\"z\":3000,\"width\":245,\"height\":101.63090128755364}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Factura.Fecha Creación.Variación.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Year\"},{\"queryRef\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Day\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t1\",\"Entity\":\"T_Factura\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Fecha Creación\"},\"Name\":\"T_Factura.Fecha Creación.Variación.Date Hierarchy.Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Name\":\"Variation\",\"Property\":\"Fecha_Creación\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Fecha_Creación Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Name\":\"Variation\",\"Property\":\"Fecha_Creación\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Fecha_Creación Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Name\":\"Variation\",\"Property\":\"Fecha_Creación\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"T_Factura.Fecha_Creación.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Fecha_Creación Day\"}]},\"syncGroup\":{\"groupName\":\"Year1\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 101.63,
+          "width": 245.00,
+          "x": 0.00,
+          "y": 280.17,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"56dbc5592cefab68a214\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":1000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"9b6b9a1056d9ea0a90a9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":326.0225846925972,\"y\":109.20953575909661,\"z\":0,\"width\":756.4366373902133,\"height\":494.65495608531995}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(T_Detalle_Pedido.ID Detalle Pedido)\"},{\"queryRef\":\"T_Detalle_Pedido.Producto\"},{\"queryRef\":\"Sum(T_Detalle_Pedido.Monto Total)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ID Detalle Pedido\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.ID Detalle Pedido)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Producto\"},\"Name\":\"T_Detalle_Pedido.Producto\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Monto Total\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.Monto Total)\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 494.65,
+          "width": 756.44,
+          "x": 326.02,
+          "y": 109.21,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a5a39335c247e3b9e781\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":118.89908256880733,\"z\":2000,\"width\":245,\"height\":76.3302752293578}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Clientes.Nombre Cliente\",\"active\":true},{\"queryRef\":\"T_Clientes.Nombre_Cliente\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Clientes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Nombre Cliente\"},\"Name\":\"T_Clientes.Nombre Cliente\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Nombre_Cliente\"},\"Name\":\"T_Clientes.Nombre_Cliente\",\"NativeReferenceName\":\"Nombre_Cliente\"}]},\"syncGroup\":{\"groupName\":\"Nombre Cliente\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.33,
+          "width": 245.00,
+          "x": 0.00,
+          "y": 118.90,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Page 3",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection93c7a20358b303d90181",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"18b40ff625772eb4c8d3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":140.6422018348624,\"y\":114.22018348623853,\"z\":3000,\"width\":591.5596330275229,\"height\":387.5229357798165,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"T_Territorio.Pais\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(T_Detalle_Pedido.Monto Total)\"}],\"Columns\":[{\"queryRef\":\"T_Detalle_Pedido.Categoría\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Territorio\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Pais\"},\"Name\":\"T_Territorio.Pais\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Monto Total\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.Monto Total)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Categoría\"},\"Name\":\"T_Detalle_Pedido.Categoría\"}]},\"display\":{\"mode\":\"hidden\"},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 387.52,
+          "width": 591.56,
+          "x": 140.64,
+          "y": 114.22,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"602618438321830bc5ea\",\"layouts\":[{\"id\":0,\"position\":{\"x\":385.929648241206,\"y\":534.2713567839196,\"z\":4000,\"width\":101.30653266331657,\"height\":39.79899497487437,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"display\":{\"mode\":\"hidden\"},\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Ver Mapa'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Bookmark'\"}}},\"bookmark\":{\"expr\":{\"Literal\":{\"Value\":\"'Bookmarkbd8e9dca2fe5844a4466'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 39.80,
+          "width": 101.31,
+          "x": 385.93,
+          "y": 534.27,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"757678441b4d694d27fc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":0,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"7e0715283d66b107bdb8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":387.1356783919598,\"y\":534.2713567839196,\"z\":5000,\"width\":101.30653266331657,\"height\":39.79899497487437,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Ver Tabla'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Bookmark'\"}}},\"bookmark\":{\"expr\":{\"Literal\":{\"Value\":\"'Bookmarkef15f30cefa914b898c9'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 39.80,
+          "width": 101.31,
+          "x": 387.14,
+          "y": 534.27,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"b6f5a9e00e162aa0cc49\",\"layouts\":[{\"id\":0,\"position\":{\"x\":786.6837387964149,\"y\":142.5864276568502,\"z\":1000,\"width\":493.31626120358516,\"height\":463.8156209987196,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Territorio.Grupo\",\"active\":true},{\"queryRef\":\"T_Territorio.Pais\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Territorio\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Grupo\"},\"Name\":\"T_Territorio.Grupo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Pais\"},\"Name\":\"T_Territorio.Pais\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 463.82,
+          "width": 493.32,
+          "x": 786.68,
+          "y": 142.59,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"d302cd52e41cd0b08dc7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":141.10552763819095,\"y\":114.57286432160804,\"z\":2000,\"width\":592.1608040201005,\"height\":388.34170854271355,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"azureMap\",\"projections\":{\"Category\":[{\"queryRef\":\"T_Territorio.Pais\",\"active\":true}],\"Size\":[{\"queryRef\":\"Sum(T_Detalle_Pedido.Monto Total)\"}],\"Series\":[{\"queryRef\":\"T_Detalle_Pedido.Categoría\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Territorio\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Pais\"},\"Name\":\"T_Territorio.Pais\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Monto Total\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.Monto Total)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Categoría\"},\"Name\":\"T_Detalle_Pedido.Categoría\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"mapControls\":[{\"properties\":{\"defaultStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'road'\"}}},\"showStylePicker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showNavigationControls\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showSelectionControl\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"bubbleLayer\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bubbleRadius\":{\"expr\":{\"Literal\":{\"Value\":\"6L\"}}},\"minBubbleRadius\":{\"expr\":{\"Literal\":{\"Value\":\"6L\"}}},\"maxRadius\":{\"expr\":{\"Literal\":{\"Value\":\"21L\"}}},\"bubbleStrokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"autoStrokeColor\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"layerPosition\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 388.34,
+          "width": 592.16,
+          "x": 141.11,
+          "y": 114.57,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Tabla Factura",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectioncd7aeb21ee4549e212ad",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"33c49b91a9d504e7fce6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":118.89908256880733,\"z\":2000,\"width\":245,\"height\":76.3302752293578}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Clientes.Nombre Cliente\",\"active\":true},{\"queryRef\":\"T_Clientes.Nombre_Cliente\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Clientes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Nombre Cliente\"},\"Name\":\"T_Clientes.Nombre Cliente\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Nombre_Cliente\"},\"Name\":\"T_Clientes.Nombre_Cliente\",\"NativeReferenceName\":\"Nombre_Cliente\"}]},\"syncGroup\":{\"groupName\":\"Nombre Cliente\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.33,
+          "width": 245.00,
+          "x": 0.00,
+          "y": 118.90,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"46314d81b053502e8e04\",\"layouts\":[{\"id\":0,\"position\":{\"x\":393.9468302658487,\"y\":52.351738241308794,\"z\":0,\"width\":375.6237218813906,\"height\":605.9713701431493}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(T_Factura.ID)1\"},{\"queryRef\":\"T_Clientes.Nombre Cliente\"},{\"queryRef\":\"Sum(T_Detalle_Pedido.Monto Total)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t1\",\"Entity\":\"T_Factura\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"T_Clientes\",\"Type\":0},{\"Name\":\"t2\",\"Entity\":\"T_Detalle_Pedido\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"ID\"},\"Name\":\"CountNonNull(T_Factura.ID)1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Nombre Cliente\"},\"Name\":\"T_Clientes.Nombre Cliente\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Monto Total\"}},\"Function\":0},\"Name\":\"Sum(T_Detalle_Pedido.Monto Total)\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 605.97,
+          "width": 375.62,
+          "x": 393.95,
+          "y": 52.35,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"5e69d25d4d70b89a076a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":841.5541922290389,\"y\":331.1247443762781,\"z\":1000,\"width\":172.76073619631902,\"height\":48.425357873210636}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Ver Detalle de la Factura'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Drillthrough'\"}}},\"drillthroughSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection86108047eebd01dbf244'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.43,
+          "width": 172.76,
+          "x": 841.55,
+          "y": 331.12,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"6ab9544badae36b90aeb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":280.17167381974247,\"z\":3000,\"width\":245,\"height\":101.63090128755364}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Factura.Fecha Creación.Variación.Date Hierarchy.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t1\",\"Entity\":\"T_Factura\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Fecha Creación\"},\"Name\":\"T_Factura.Fecha Creación.Variación.Date Hierarchy.Year\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 101.63,
+          "width": 245.00,
+          "x": 0.00,
+          "y": 280.17,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Classroom"
+}

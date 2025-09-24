@@ -1,0 +1,58 @@
+name: Deploy Fabric Initial Workspace
+
+on:
+  push:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+permissions:
+  contents: write  # NECESARIO para permitir el push
+
+env:
+  ENVIRONMENT: PRO
+
+jobs:
+  deploy-new-fabric-workspace:
+    #if: github.ref != 'refs/heads/main'  # Evita ejecutar si es la rama main
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install fabric-cicd
+        run: |
+          pip install fabric-cicd
+
+      # - name: Set environment vars by branch
+      #   run: |
+      #     echo "Branch: ${{ github.ref_name }}"                 
+      #     if [[ "${{ github.ref_name }}" == "dev" || "${{ github.ref_name }}" == "test" ]]; then
+      #      echo "FABRIC_WORKSPACE_ID=${{ secrets.FABRIC_WORKSPACE_ID }}" >> $GITHUB_ENV
+      #      echo "FABRIC_CLIENT_ID=${{ secrets.FABRIC_CLIENT_ID }}" >> $GITHUB_ENV
+      #      echo "FABRIC_CLIENT_SECRET=${{ secrets.FABRIC_CLIENT_SECRET }}" >> $GITHUB_ENV
+      #      echo "FABRIC_TENANT_ID=${{ secrets.FABRIC_TENANT_ID }}" >> $GITHUB_ENV
+      #      echo "TARGET_ENVIRONMENT_NAME=test" >> $GITHUB_ENV
+          
+      #     elif [[ "${{ github.ref_name }}" == "main" ]]; then
+      #       echo "FABRIC_WORKSPACE_ID=${{ secrets.FABRIC_WORKSPACE_ID_PRO }}" >> $GITHUB_ENV
+      #       echo "FABRIC_CLIENT_ID=${{ secrets.FABRIC_CLIENT_ID_PRO }}" >> $GITHUB_ENV
+      #       echo "FABRIC_CLIENT_SECRET=${{ secrets.FABRIC_CLIENT_SECRET_PRO }}" >> $GITHUB_ENV
+      #       echo "FABRIC_TENANT_ID=${{ secrets.FABRIC_TENANT_ID_PRO }}" >> $GITHUB_ENV
+      #       echo "TARGET_ENVIRONMENT_NAME=pro" >> $GITHUB_ENV
+      #     fi
+
+      - name: Run Artifact update
+        run: python ./scripts/run_fabric_cicd.py
+        env:
+          FABRIC_CLIENT_ID: ${{ env.FABRIC_CLIENT_ID }}
+          FABRIC_CLIENT_SECRET: ${{ env.FABRIC_CLIENT_SECRET }}
+          FABRIC_TENANT_ID: ${{ env.FABRIC_TENANT_ID }}
+          FABRIC_WORKSPACE_ID: ${{ env.FABRIC_WORKSPACE_ID }}
+          TARGET_ENVIRONMENT_NAME: ${{ env.ENVIRONMENT }}          

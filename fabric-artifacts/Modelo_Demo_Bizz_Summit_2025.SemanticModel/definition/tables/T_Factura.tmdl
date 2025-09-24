@@ -1,0 +1,94 @@
+table T_Factura
+	lineageTag: 425eeb57-6ee1-4a71-b8e2-b018e6cf6025
+
+	column ID
+		dataType: int64
+		formatString: 0
+		lineageTag: f74d7e93-16dc-4e5a-b47f-266587f3e579
+		summarizeBy: none
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column FechaPago
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2122dc9f-838a-4133-bb26-d1ed5fa891af
+		summarizeBy: none
+		sourceColumn: FechaPago
+
+		variation Variación
+			isDefault
+			relationship: 7802dc03-14e9-4b3c-9e8d-fe0d0799ecf9
+			defaultHierarchy: LocalDateTable_aa8df232-aadf-45fb-a525-3e98c224c0ec.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column FechaEntrega
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ed49610c-72a3-4954-8a21-2c50b3d4fba1
+		summarizeBy: none
+		sourceColumn: FechaEntrega
+
+		variation Variación
+			isDefault
+			relationship: 1ae41225-35da-4b59-b699-a7e3004d03ed
+			defaultHierarchy: LocalDateTable_998c7beb-5433-4870-8d22-3af1ea618787.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column IdTerritorio
+		dataType: int64
+		formatString: 0
+		lineageTag: 3ccdf9f1-930d-4982-a2a5-5d23f547ddb9
+		summarizeBy: none
+		sourceColumn: IdTerritorio
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_Cliente
+		dataType: int64
+		formatString: 0
+		lineageTag: 43c2853a-99ef-472a-8e1a-0ab33f18fda1
+		summarizeBy: none
+		sourceColumn: ID_Cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha_Creación
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cb89b458-224d-4675-8b15-67f72c7121b0
+		summarizeBy: none
+		sourceColumn: Fecha_Creación
+
+		variation Variation
+			isDefault
+			relationship: e25c4914-22c0-463b-87c1-fab65019ff52
+			defaultHierarchy: LocalDateTable_f2418aa6-6c4a-4ba6-b064-cd0757d98b8c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition T_Factura-c5476f37-9f7a-44c8-8b89-b766f49750dd = m
+		mode: import
+		source =
+				let
+				    // Origen = Excel.Workbook(File.Contents("C:\Users\rromero\ENCAMINA S.L\POWERBI - REALE - Videopíldoras\4-Diseño, Navegación y Gestión de Informes\Video 17\Material Video Pildora 17\Tablas ejemplo Power BI.xlsx"), null, true),
+				    // T_Factura_Table = Origen{[Item="T_Factura",Kind="Table"]}[Data],
+				    Source = Sql.Database("jj3coufvnfiutemlcp3jbcuy5u-22pdzlqcjviexdplrogcas232y.datawarehouse.fabric.microsoft.com", "lh_data"),
+				    dbo_fact_facturas = Source{[Schema="dbo",Item="fact_facturas"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(dbo_fact_facturas,{{"ID", Int64.Type}, {"ID_Cliente", Int64.Type}, {"Fecha_Creación", type date}, {"FechaPago", type date}, {"FechaEntrega", type date}, {"IdTerritorio", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

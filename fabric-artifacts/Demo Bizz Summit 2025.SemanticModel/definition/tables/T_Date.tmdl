@@ -1,0 +1,77 @@
+table T_Date
+	lineageTag: e9eef74d-43c0-43a0-9030-704ac6fb4116
+
+	column Date
+		formatString: dd/mm/yyyy
+		lineageTag: 1618c32b-2072-4cc6-888a-37c1afc7d0dc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: afaf961f-e2b6-4452-b6a4-2ff61b600064
+			defaultHierarchy: LocalDateTable_5f2ad9a2-9481-481e-a940-028ceaa20c68.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 1-Año = YEAR(T_Date[Date])
+		formatString: 0
+		lineageTag: cf1d6c95-10b8-41a5-92b5-f2d1051ac2ee
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 2-NumeroMes = MONTH('T_Date'[Date])
+		formatString: 0
+		lineageTag: d20c72e9-471b-41bc-a034-4aa7576a861a
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 3-NombreMes = FORMAT('T_Date'[Date],"mmmm")
+		lineageTag: 57a22163-e082-4e2b-bf92-edb0aca9490c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column 4-Mes-Año = FORMAT('T_Date'[Date],"mmm-yyyy")
+		lineageTag: 4a10336a-709f-4450-b905-e020368d7ceb
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column '5-Periodo de Reporte' = "Q" & FORMAT('T_Date'[Date],"Q")
+		lineageTag: 0c5c5dfe-97f4-4b42-8d67-81775765b3ea
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column 'Dia Semana' =
+			
+			//WEEKDAY(T_Date[Date])
+			
+			FORMAT(T_Date[Date] , "dddd")
+		lineageTag: 22079676-e91f-43c6-b069-a4be94e8eff2
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	partition T_Date-f560a063-2b05-4118-b754-a023cb03796f = calculated
+		mode: import
+		source =
+				
+				CALENDAR(MIN('T_Factura'[Fecha_Creación]),MAX('T_Factura'[Fecha_Creación]))
+				
+				//CALENDARAUTO(12)
+
