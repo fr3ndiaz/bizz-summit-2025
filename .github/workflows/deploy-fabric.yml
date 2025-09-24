@@ -11,6 +11,7 @@ permissions:
 
 env:
   ENVIRONMENT: PRO
+  FABRIC_WORKSPACE_ID: ${{ secrets.FABRIC_WORKSPACE_ID }}
 
 jobs:
   deploy-new-fabric-workspace:
@@ -54,5 +55,5 @@ jobs:
           FABRIC_CLIENT_ID: ${{ secrets.FABRIC_CLIENT_ID }}
           FABRIC_CLIENT_SECRET: ${{ secrets.FABRIC_CLIENT_SECRET }}
           FABRIC_TENANT_ID: ${{ secrets.FABRIC_TENANT_ID }}
-          FABRIC_WORKSPACE_ID: ${{ secrets.FABRIC_WORKSPACE_ID }}
+          FABRIC_WORKSPACE_ID: ${{ env.FABRIC_WORKSPACE_ID }}
           TARGET_ENVIRONMENT_NAME: ${{ env.ENVIRONMENT }}
