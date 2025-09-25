@@ -10,7 +10,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBIDesktopVersion = 2.146.1254.0 (25.08)+791a7518fadc83da883d79322a2658aff57c8db3
 
-annotation PBI_QueryOrder = ["T_Clientes","T_Detalle_Pedido","T_Factura","T_Territorio"]
+annotation PBI_QueryOrder = ["param_cnn","T_Clientes","T_Detalle_Pedido","T_Factura","T_Territorio"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
