@@ -7,7 +7,7 @@ find_replace:
 
     # ---------- SQL ANALYTICS ENDPOINT ---------------------------           
     # SQL Analytics Endopoint 
-    # - find_value: "([a-z0-9]+)-([a-z0-9]+)\.datawarehouse\.fabric\.microsoft\.com" #"ksjmpaectuve5bv4zk2milbezu-7ghleum3hylu5d5fjyqjohiioq.datawarehouse.fabric.microsoft.com"
-    #   replace_value:
-    #     _ALL_: "$items.Lakehouse.lh_data.sqlendpoint"
-    #   is_regex: "True"
+    - find_value: "([a-z0-9]+)-([a-z0-9]+)\.datawarehouse\.fabric\.microsoft\.com" #"ksjmpaectuve5bv4zk2milbezu-7ghleum3hylu5d5fjyqjohiioq.datawarehouse.fabric.microsoft.com"
+      replace_value:
+        _ALL_: "$items.Lakehouse.lh_data.sqlendpoint"
+      is_regex: "True"
