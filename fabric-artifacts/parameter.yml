@@ -28,7 +28,6 @@ find_replace:
       # lakehouse GUID to be replaced (using regex pattern)
     - find_value: \#\s*META\s+"default_lakehouse":\s*"([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})"
       replace_value:
-          PPE: "$items.Lakehouse.lh_data.id" # PPE lakehouse GUID (dynamic)
-          PROD: "$items.Lakehouse.lh_data.id" # PROD lakehouse GUID (dynamic)
+          _ALL_: "$items.Lakehouse.lh_data.id" # PPE lakehouse GUID (dynamic)          
       is_regex: "true" # enable regex pattern matching
       item_type: "Notebook" # filter on notebook files
