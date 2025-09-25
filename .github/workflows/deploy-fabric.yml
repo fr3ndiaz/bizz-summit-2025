@@ -33,6 +33,16 @@ jobs:
         run: |
           pip install fabric-cicd
 
+      - name: Run Take Over and Cloud Connection
+        run: python ./scripts/run_fabric_update_ds.py
+        env:
+          FABRIC_CLIENT_ID: ${{ secrets.FABRIC_CLIENT_ID }}
+          FABRIC_CLIENT_SECRET: ${{ secrets.FABRIC_CLIENT_SECRET }}
+          FABRIC_TENANT_ID: ${{ secrets.FABRIC_TENANT_ID }}
+          FABRIC_WORKSPACE_ID: ${{ secrets.FABRIC_WORKSPACE_ID }}
+          TARGET_ENVIRONMENT_NAME: ${{ env.ENVIRONMENT }}
+          FABRIC_CLOUD_CONNECTION_ID: ${{ secrets.FABRIC_CLOUD_CONNECTION_ID }}
+          IS_ONLY_UPDATE: "False"
 
       - name: Run Artifact update
         run: python ./scripts/run_fabric_cicd.py
@@ -42,3 +52,14 @@ jobs:
           FABRIC_TENANT_ID: ${{ secrets.FABRIC_TENANT_ID }}
           FABRIC_WORKSPACE_ID: ${{ secrets.FABRIC_WORKSPACE_ID }}
           TARGET_ENVIRONMENT_NAME: ${{ env.ENVIRONMENT }}
+
+      - name: Run Update Cloud Connection
+        run: python ./scripts/run_fabric_update_ds.py
+        env:
+          FABRIC_CLIENT_ID: ${{ secrets.FABRIC_CLIENT_ID }}
+          FABRIC_CLIENT_SECRET: ${{ secrets.FABRIC_CLIENT_SECRET }}
+          FABRIC_TENANT_ID: ${{ secrets.FABRIC_TENANT_ID }}
+          FABRIC_WORKSPACE_ID: ${{ secrets.FABRIC_WORKSPACE_ID }}
+          TARGET_ENVIRONMENT_NAME: ${{ env.ENVIRONMENT }}
+          FABRIC_CLOUD_CONNECTION_ID: ${{ secrets.FABRIC_CLOUD_CONNECTION_ID }}
+          IS_ONLY_UPDATE: "True"
