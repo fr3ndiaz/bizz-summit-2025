@@ -1,3 +1,8 @@
+# ------------- Info ----------------------------------------------
+# Toda la info sobre la parametrización se puede ver en la página web: 
+# https://microsoft.github.io/fabric-cicd/latest/how_to/parameterization/#regex-pattern-match
+# ------------------------------------------------------------------
+
 find_replace:
     # ---------- LAKEHOUSES ---------------------------------------        
     # Lakehouse GUID 
@@ -7,7 +12,23 @@ find_replace:
 
     # ---------- SQL ANALYTICS ENDPOINT ---------------------------           
     # SQL Analytics Endopoint 
-    - find_value: '([a-z0-9]+-[a-z0-9]+)\.datawarehouse\.fabric\.microsoft\.com' #"ksjmpaectuve5bv4zk2milbezu-7ghleum3hylu5d5fjyqjohiioq.datawarehouse.fabric.microsoft.com"
+    - find_value: '([a-z0-9]+-[a-z0-9]+)\.datawarehouse\.fabric\.microsoft\.com' 
       replace_value:
         _ALL_: "$items.Lakehouse.lh_data.sqlendpoint"
-      is_regex: "True"
+      is_regex: "true"
+
+    # ---------- Notebooks ---------------------------------------
+    # lakehouse workspace ID to be replaced (using regex pattern)
+    - find_value: \#\s*META\s+"default_lakehouse_workspace_id":\s*"([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})"
+      replace_value:
+          _ALL_: "$workspace.id" # workspace ID of the target environment (dynamic)
+      is_regex: "true" # enable regex pattern matching
+      item_type: "Notebook" # filter on notebook files
+
+      # lakehouse GUID to be replaced (using regex pattern)
+    - find_value: \#\s*META\s+"default_lakehouse":\s*"([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})"
+      replace_value:
+          PPE: "$items.Lakehouse.lh_data.id" # PPE lakehouse GUID (dynamic)
+          PROD: "$items.Lakehouse.lh_data.id" # PROD lakehouse GUID (dynamic)
+      is_regex: "true" # enable regex pattern matching
+      item_type: "Notebook" # filter on notebook files
