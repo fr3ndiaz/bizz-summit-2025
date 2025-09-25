@@ -54,9 +54,7 @@ table T_Territorio
 		mode: import
 		source =
 				let
-				    // Origen = Excel.Workbook(File.Contents("C:\Users\rromero\ENCAMINA S.L\POWERBI - REALE - Videopíldoras\4-Diseño, Navegación y Gestión de Informes\Video 17\Material Video Pildora 17\Tablas ejemplo Power BI.xlsx"), null, true),
-				    // T_Territorio_Table = Origen{[Item="T_Territorio",Kind="Table"]}[Data],
-				    Source = Sql.Database("jj3coufvnfiutemlcp3jbcuy5u-22pdzlqcjviexdplrogcas232y.datawarehouse.fabric.microsoft.com", "lh_data"),
+				    Source = Sql.Database(param_cnn, "lh_data"),
 				    dbo_dimterritorios = Source{[Schema="dbo",Item="dimterritorios"]}[Data],
 				    #"Tipo cambiado" = Table.TransformColumnTypes(dbo_dimterritorios,{{"IdTerritorio", Int64.Type}, {"Pais", type text}, {"Zona", type text}, {"CodigoPais", type text}, {"Grupo", type text}})
 				in

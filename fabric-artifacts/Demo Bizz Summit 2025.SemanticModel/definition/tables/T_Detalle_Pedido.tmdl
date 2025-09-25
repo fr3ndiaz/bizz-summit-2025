@@ -97,9 +97,7 @@ table T_Detalle_Pedido
 		mode: import
 		source =
 				let
-				    // Origen = Excel.Workbook(File.Contents("C:\Users\rromero\ENCAMINA S.L\POWERBI - REALE - Videopíldoras\4-Diseño, Navegación y Gestión de Informes\Video 17\Material Video Pildora 17\Tablas ejemplo Power BI.xlsx"), null, true),
-				    // T_Detalle_Pedido_Table = Origen{[Item="T_Detalle_Pedido",Kind="Table"]}[Data],
-				    Source = Sql.Database("jj3coufvnfiutemlcp3jbcuy5u-22pdzlqcjviexdplrogcas232y.datawarehouse.fabric.microsoft.com", "lh_data"),
+				    Source = Sql.Database(param_cnn, "lh_data"),
 				    dbo_fact_detalle_pedido = Source{[Schema="dbo",Item="fact_detalle_pedido"]}[Data],
 				    #"Tipo cambiado" = Table.TransformColumnTypes(dbo_fact_detalle_pedido,{{"ID_Detalle_Pedido", Int64.Type}, {"ID_Factura", Int64.Type}, {"Producto", type text}, {"Categoría", type text}, {"Sub_Categoria", type text}, {"Cantidad", Int64.Type}, {"Monto", type number}}),
 				    #"Multiplicación insertada" = Table.AddColumn(#"Tipo cambiado", "Monto Total", each [Cantidad] * [Monto], type number),
