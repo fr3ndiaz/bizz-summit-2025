@@ -4,3 +4,10 @@ find_replace:
     - find_value: "70756d4f-7bef-4b01-a1d5-d8e1ed09db26"
       replace_value:        
         _ALL_: "$items.Lakehouse.lh_data.id"
+
+    # ---------- SQL ANALYTICS ENDPOINT ---------------------------           
+    # SQL Analytics Endopoint 
+    - find_value: "([a-z0-9]+)-([a-z0-9]+)\.datawarehouse\.fabric\.microsoft\.com" #"ksjmpaectuve5bv4zk2milbezu-7ghleum3hylu5d5fjyqjohiioq.datawarehouse.fabric.microsoft.com"
+      replace_value:
+        _ALL_: "$items.Lakehouse.lh_data.sqlendpoint"
+      is_regex: "True"
