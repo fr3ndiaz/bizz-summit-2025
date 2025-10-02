@@ -1,1 +1,1 @@
-# bizz-summit-2025
+# Bizz-Summit-2025
